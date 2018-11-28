@@ -44,7 +44,10 @@ module.exports = {
         terserOptions: {
           keep_classnames: true,
           keep_fnames: true,
+          // will not work like this
           mangle: { properties: {} }
+          // without the properties option, it will work
+          // mangle: {}
         }
       })
     ]
